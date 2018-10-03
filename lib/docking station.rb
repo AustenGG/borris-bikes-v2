@@ -23,7 +23,9 @@
 # from (irb):1
 # from /Users/username/.rvm/rubies/ruby-2.2.2/bin/irb:11:in '<main>'
 
+require_relative 'bike'
 class DockingStation
   def release_bike
+    Bike.new
   end
 end
