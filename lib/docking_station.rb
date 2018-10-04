@@ -41,7 +41,11 @@ class DockingStation
 
   def release_bike
     fail 'No bikes available' if empty?
+    if @broken == true 
+      fail 'Broken bike'
+    else
     bikes.pop
+    end
   end
 
   private
